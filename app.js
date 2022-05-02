@@ -14,11 +14,11 @@ if (data[0].zuruecklegen == true) {
         console.log(`Zweig Nummer ${(numberOfElements -i)+1}`);
         for (let x = 1; x <= data[0].iterations; x++) { 
             console.log(data[i].name);        
-            values.push(`Die Wahrscheinlichkeit auf der Zweigebene ${x} für ${data[i].name} beträgt ${data[i].absolutNumber/data[0].max}, denn ${data[i].absolutNumber}/${data[0].max} = ${data[i].absolutNumber/data[0].max}`)
-            console.log(`Die Wahrscheinlichkeit auf der Zweigebene ${x} für ${data[i].name} beträgt ${data[i].absolutNumber/data[0].max}, denn ${data[i].absolutNumber}/${data[0].max} = ${data[i].absolutNumber/data[0].max}`);
+            values.push(`Die Wahrscheinlichkeit auf der Zweigebene ${x} für ${data[i].name} beträgt ${data[i].absolutNumber/data[0].max}`)
+            console.log(`Die Wahrscheinlichkeit auf der Zweigebene ${x} für ${data[i].name} beträgt ${data[i].absolutNumber/data[0].max}`);
             for (let z = numberOfElements; z >0 ; z--) {
                 if (z == i) continue
-                console.log(`Die Wahrscheinlichkeit auf der Zweigebene ${x} für ${data[z].name} beträgt ${data[z].absolutNumber/data[0].max}, denn ${data[i].absolutNumber}/${data[0].max} = ${data[z].absolutNumber/data[0].max}`);
+                console.log(`Die Wahrscheinlichkeit auf der Zweigebene ${x} für ${data[z].name} beträgt ${data[z].absolutNumber/data[0].max}`);
             }
             data[i].absolutNumber -= 1;
             if (data[i].absolutNumber < 0) data[i].absolutNumber = 0
@@ -32,11 +32,11 @@ if (data[0].zuruecklegen == true) {
         console.log(`Zweig Nummer ${(numberOfElements -i)+1}`);
         for (let x = 1; x <= data[0].iterations; x++) { 
             console.log(data[i].name);
-            values.push(`Die Wahrscheinlichkeit auf der Zweigebene ${x} für ${data[i].name} beträgt ${data[i].absolutNumber/data[0].max}, denn ${data[i].absolutNumber}/${data[0].max} = ${data[i].absolutNumber/data[0].max}`)
-            console.log(`Die Wahrscheinlichkeit auf der Zweigebene ${x} für ${data[i].name} beträgt ${data[i].absolutNumber/data[0].max}, denn ${data[i].absolutNumber}/${data[0].max} = ${data[i].absolutNumber/data[0].max}`);
+            values.push(`Die Wahrscheinlichkeit auf der Zweigebene ${x} für ${data[i].name} beträgt ${data[i].absolutNumber/data[0].max}`)
+            console.log(`Die Wahrscheinlichkeit auf der Zweigebene ${x} für ${data[i].name} beträgt ${data[i].absolutNumber/data[0].max}`);
             for (let z = numberOfElements; z > 0; z--) {
                 if (z == i) continue
-                console.log(`Die Wahrscheinlichkeit auf der Zweigebene ${x} für ${data[z].name} beträgt ${data[z].absolutNumber/data[0].max}, denn ${data[z].absolutNumber}/${data[0].max} = ${data[z].absolutNumber/data[0].max} `);
+                console.log(`Die Wahrscheinlichkeit auf der Zweigebene ${x} für ${data[z].name} beträgt ${data[z].absolutNumber/data[0].max}`);
             }
         }
     }
